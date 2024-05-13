@@ -1,4 +1,4 @@
-import React, {CSSProperties, useEffect, useRef, useState} from 'react';
+import React, {CSSProperties, useEffect, useMemo, useRef, useState} from 'react';
 import './App.css';
 import VideoSrc from './assets/video.mp4';
 import { Player, PlayerRef } from '@remotion/player';
@@ -30,6 +30,10 @@ function App() {
         maxWidth: '100%', // Ensures that video does not exceed the width of its container
         objectFit: 'cover', // Adjusts the video size to cover the area without losing its aspect ratio
     };
+
+    const inputProps = useMemo(() => ({
+        videoSrc: blobUrl
+    }), [blobUrl]);
 
     return (
         <div className="App">
@@ -65,9 +69,7 @@ function App() {
                         compositionHeight={1080}
                         fps={60}
                         controls
-                        inputProps={{
-                            videoSrc: blobUrl
-                        }}
+                        inputProps={inputProps}
                         style={{
                             ...videoStyle
                         }}
