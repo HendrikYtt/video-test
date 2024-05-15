@@ -40,7 +40,7 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <p>1. Native video tag with static file</p>
-                <video src={VideoSrc} controls style={videoStyle}></video>
+                <video src={VideoSrc} controls style={videoStyle} playsInline></video>
                 <p>2. Remotion player with static file</p>
                 <Player
                     ref={playerRef}
@@ -59,7 +59,7 @@ function App() {
                 />
 
                 <p>3. Native video tag with blob URL</p>
-                <video src={blobUrl} controls style={videoStyle}></video>
+                <video src={blobUrl} controls style={videoStyle} playsInline></video>
                 <p>4. Remotion player with blob URL</p>
                 {blobUrl !== '' && (
                     <Player
@@ -79,7 +79,7 @@ function App() {
                     />
                 )}
                 <p>5. Native video tag with S3 URL</p>
-                <video src={objectUrl} controls style={videoStyle}></video>
+                <video src={objectUrl} controls style={videoStyle} playsInline></video>
                 <p>6. Remotion player with S3 URL</p>
                     <Player
                         ref={playerRef}
