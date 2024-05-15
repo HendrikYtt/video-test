@@ -12,7 +12,9 @@ export const RemotionFrame: React.FC<z.infer<typeof myCompSchema>> = ({
 
 	return (
 		<AbsoluteFill>
-			<Video pauseWhenBuffering src={videoSrc} preload="metadata" />
+			<Video
+				// pauseWhenBuffering
+				   src={videoSrc} preload="metadata" />
 		</AbsoluteFill>
 	);
 };

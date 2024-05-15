@@ -5,6 +5,7 @@ import { Player, PlayerRef } from '@remotion/player';
 import { RemotionFrame } from "./RemotionFrame";
 
 function App() {
+    const objectUrl = 'https://textualyze-images.s3.eu-north-1.amazonaws.com/b4324ce3-c415-4ab6-bd93-5a8391361bd2.mov';
     const playerRef = useRef<PlayerRef>(null);
     const [blobUrl, setBlobUrl] = useState('');
 
@@ -31,9 +32,9 @@ function App() {
         objectFit: 'cover', // Adjusts the video size to cover the area without losing its aspect ratio
     };
 
-    const inputProps = useMemo(() => ({
-        videoSrc: blobUrl
-    }), [blobUrl]);
+    // const inputProps = useMemo(() => ({
+    //     videoSrc: blobUrl
+    // }), [blobUrl]);
 
     return (
         <div className="App">
@@ -69,12 +70,32 @@ function App() {
                         compositionHeight={1080}
                         fps={60}
                         controls
-                        inputProps={inputProps}
+                        inputProps={{
+                            videoSrc: blobUrl
+                        }}
                         style={{
                             ...videoStyle
                         }}
                     />
                 )}
+                <p>5. Native video tag with S3 URL</p>
+                <video src={objectUrl} controls style={videoStyle}></video>
+                <p>6. Remotion player with S3 URL</p>
+                    <Player
+                        ref={playerRef}
+                        component={RemotionFrame}
+                        durationInFrames={97 * 60}
+                        compositionWidth={1080}
+                        compositionHeight={1920}
+                        fps={60}
+                        controls
+                        inputProps={{
+                            videoSrc: objectUrl
+                        }}
+                        style={{
+                            ...videoStyle
+                        }}
+                    />
             </header>
         </div>
     );
