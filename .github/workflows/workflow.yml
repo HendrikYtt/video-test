@@ -16,7 +16,7 @@ jobs:
         run: npm i -g vercel
 
       - name: Echo Vercel Token
-        run: echo ${{ secrets }}
+        run: echo ${{ secrets.VERCEL_TOKEN }}
 
       - name: Vercel Login
         run: vercel login --token ${{ secrets.VERCEL_TOKEN }}
