@@ -3,6 +3,7 @@ import './App.css';
 import VideoSrc from './assets/video.mp4';
 import { Player, PlayerRef } from '@remotion/player';
 import { RemotionFrame } from "./RemotionFrame";
+import {RemotionFrameOffthreadVideo} from "./RemotionFrameOffhreadVideo";
 
 function App() {
     const objectUrl = 'https://textualyze-images.s3.eu-north-1.amazonaws.com/b4324ce3-c415-4ab6-bd93-5a8391361bd2.mov';
@@ -96,6 +97,22 @@ function App() {
                             ...videoStyle
                         }}
                     />
+                <p>7. Remotion OffthreadVideo player with S3 URL</p>
+                <Player
+                    ref={playerRef}
+                    component={RemotionFrameOffthreadVideo}
+                    durationInFrames={97 * 60}
+                    compositionWidth={1080}
+                    compositionHeight={1920}
+                    fps={60}
+                    controls
+                    inputProps={{
+                        videoSrc: objectUrl
+                    }}
+                    style={{
+                        ...videoStyle
+                    }}
+                />
             </header>
         </div>
     );
