@@ -4,9 +4,11 @@ import VideoSrc from './assets/video.mp4';
 import { Player, PlayerRef } from '@remotion/player';
 import { RemotionFrame } from "./RemotionFrame";
 import {RemotionFrameOffthreadVideo} from "./RemotionFrameOffhreadVideo";
+import {preloadVideo} from "@remotion/preload";
 
+const objectUrl = 'https://textualyze-images.s3.eu-north-1.amazonaws.com/b4324ce3-c415-4ab6-bd93-5a8391361bd2.mov';
+preloadVideo(objectUrl);
 function App() {
-    const objectUrl = 'https://textualyze-images.s3.eu-north-1.amazonaws.com/b4324ce3-c415-4ab6-bd93-5a8391361bd2.mov';
     const playerRef = useRef<PlayerRef>(null);
     const [blobUrl, setBlobUrl] = useState('');
 
@@ -32,6 +34,8 @@ function App() {
         maxWidth: '100%', // Ensures that video does not exceed the width of its container
         objectFit: 'cover', // Adjusts the video size to cover the area without losing its aspect ratio
     };
+
+
 
     // const inputProps = useMemo(() => ({
     //     videoSrc: blobUrl

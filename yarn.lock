@@ -1695,6 +1695,11 @@
   dependencies:
     remotion "4.0.157"
 
+"@remotion/preload@^4.0.159":
+  version "4.0.159"
+  resolved "https://registry.yarnpkg.com/@remotion/preload/-/preload-4.0.159.tgz#d51053feb7764aff6baac7dc3aaac73c1fc8d175"
+  integrity sha512-eFYtc2K/J5vOov8LT21KfqtC6D0oTsRjgwNsGI4BdsqRc8SSVpgXoxUJGvyGQiRdDCVKDISN6Hn2JWpEBevpjA==
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
