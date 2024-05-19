@@ -6,7 +6,8 @@ import { RemotionFrame } from "./RemotionFrame";
 import {RemotionFrameOffthreadVideo} from "./RemotionFrameOffhreadVideo";
 import {preloadVideo} from "@remotion/preload";
 
-const objectUrl = 'https://textualyze-images.s3.eu-north-1.amazonaws.com/b4324ce3-c415-4ab6-bd93-5a8391361bd2.mov';
+// const objectUrl = 'https://textualyze-images.s3.eu-north-1.amazonaws.com/b4324ce3-c415-4ab6-bd93-5a8391361bd2.mov';
+const objectUrl = 'https://dqu1p08d61fh.cloudfront.net/ac52e697-64ff-4008-922a-df3dd115c2ad/uWdyRqNTX0ir141o8xrVQ/dbad75de-b093-40a3-ba0f-1ddcce621dc3mov10may202408-13-41mp4-compressed.mp4';
 preloadVideo(objectUrl);
 function App() {
     const playerRef = useRef<PlayerRef>(null);
