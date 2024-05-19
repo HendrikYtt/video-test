@@ -1688,17 +1688,17 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@remotion/player@^4.0.157":
-  version "4.0.157"
-  resolved "https://registry.yarnpkg.com/@remotion/player/-/player-4.0.157.tgz#4274a0536778cb847cbf6bc6e6c5850b70738694"
-  integrity sha512-K7frn5E1hhBEijeDQEIuDqM/l4VrdH6023JcrHZEFdEJMM95dHNOuHuLsx3kF0dHtOyBe3Yp5q+FY39m+NJqSw==
+"@remotion/player@^4.0.160":
+  version "4.0.160"
+  resolved "https://registry.yarnpkg.com/@remotion/player/-/player-4.0.160.tgz#565b23dc1702ade147ab7a3e87b4c1ddc3010e3b"
+  integrity sha512-espPUMFnMFVFuXc9YfysTPHWNq/tNk8rscnx/vtssRcN+bEcVH0r8clNCI7z6kXnS1XPzywszrnxmwCFGDxcfw==
   dependencies:
-    remotion "4.0.157"
+    remotion "4.0.160"
 
-"@remotion/preload@^4.0.159":
-  version "4.0.159"
-  resolved "https://registry.yarnpkg.com/@remotion/preload/-/preload-4.0.159.tgz#d51053feb7764aff6baac7dc3aaac73c1fc8d175"
-  integrity sha512-eFYtc2K/J5vOov8LT21KfqtC6D0oTsRjgwNsGI4BdsqRc8SSVpgXoxUJGvyGQiRdDCVKDISN6Hn2JWpEBevpjA==
+"@remotion/preload@^4.0.160":
+  version "4.0.160"
+  resolved "https://registry.yarnpkg.com/@remotion/preload/-/preload-4.0.160.tgz#3f9df7b2e0b111bddc2ed3ca2e81341c8b823d24"
+  integrity sha512-8BcbdPxVXs06WrU0GYoGav5xSE9NvjUlI77QM2PO2KOy60VgIHmNheO87H0hua+sQcs0qKU8PHF0Jw7q1NdSLA==
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
@@ -8238,10 +8238,10 @@ relateurl@^0.2.7:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==
 
-remotion@4.0.157, remotion@^4.0.157:
-  version "4.0.157"
-  resolved "https://registry.yarnpkg.com/remotion/-/remotion-4.0.157.tgz#64c53734165dcceb3a3493268e942934b91d7351"
-  integrity sha512-VYlssePTPPbzVJrn/ydYPWCcF/VRzZuSBee11+wxOWOYa89j7b6wOA0AmAA3wwflBPRdVMhyECbydMOTyky5YQ==
+remotion@4.0.160, remotion@^4.0.160:
+  version "4.0.160"
+  resolved "https://registry.yarnpkg.com/remotion/-/remotion-4.0.160.tgz#bb0ef5ee0b3cc5727fda89c2bfa89ff98e9002ce"
+  integrity sha512-vEc8mvmDX7K3k6s7S6R+2FCG6FOW9hN6yvLHvdvSavgh10y4X/8g44uHkTVvxSgo5H/LS49w/GBV9ZDLPs6K6A==
 
 renderkid@^3.0.0:
   version "3.0.0"
